@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QR Code Generator using Js</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="myscript.js"></script>
+
+</head>
+<body>
+	<h1>Javascript vCard generator with QR code</h1>
+<form action="" method="post">
+    <fieldset>
+        <legend>You</legend>
+    <p><label>First name</label><input type="text" name="first_name" size="40"></p>
+    <p><label>Last name</label><input type="text" name="last_name" size="40"></p>
+        <p><label>Birthday</label><input type="text" name="birthday" size="40"></p>
+        <p><label>Gender</label><select name="gender">
+            <option></option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            </select></p>
+    </fieldset>
+    <fieldset>
+        <legend>Home</legend>
+        <p><label>Street and number</label><input type="text" name="home_street" size="40"></p>
+        <p><label>City</label><input type="text" name="home_city" size="40"></p>
+        <p><label>Postal code</label><input type="text" name="home_region" size="40"></p>
+        <p><label>Region</label><input type="text" name="home_post" size="40"></p>
+        <p><label>Country</label><input type="text" name="home_country" size="40"></p>
+        <p><label>Telephone</label><input type="text" name="home_tel" size="40"></p>
+        <p><label>E-mail</label><input type="text" name="home_email" size="40"></p>
+        <p><label>Website</label><input type="text" name="home_url" size="40"></p>
+    </fieldset>
+    <fieldset>
+        <legend>Work</legend>
+        <p><label>Job title</label><input type="text" name="org_title" size="40"></p>
+        <p><label>Name</label><input type="text" name="org_name" size="40"></p>
+        <p><label>Street and number</label><input type="text" name="org_street" size="40"></p>
+        <p><label>City</label><input type="text" name="org_city" size="40"></p>
+        <p><label>Postal code</label><input type="text" name="org_region" size="40"></p>
+        <p><label>Region</label><input type="text" name="org_post" size="40"></p>
+        <p><label>Country</label><input type="text" name="org_country" size="40"></p>
+        <p><label>Telephone</label><input type="text" name="org_tel" size="40"></p>
+        <p><label>E-mail</label><input type="text" name="org_email" size="40"></p>
+        <p><label>Website</label><input type="text" name="org_url" size="40"></p>
+    </fieldset>
+    <p><input type="button" name="submit" value="Create QR Code"></p>
+</form>
+    <h2>vCard output</h2>
+    <input id="link" type="text" name="link" readonly="1" placeholder="Qrcode Link" style="width: 100%;">
+    <img id="qr" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=" alt="vcard qr">
+
+</body>
+</html>
